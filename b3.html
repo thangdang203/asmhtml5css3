@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./b3.css">
+</head>
+
+<body>
+    <header>
+        <div class="a1">
+            <div class="logo">
+                <img src="./img/Group 2.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="b1.html">Home</a></li>
+                    <li><a href="b2.html">Facilities</a></li>
+                    <li><a href="b3.html">Rooms</a></li>
+                    <li><a href="b4.html">Contact-us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="img">
+        <img class="img-1" src="./img/gabriel ghnassia A9h6OsAxTyQ unsplash.jpg" alt="" width="100%">
+    </div>
+    </header>
+    <article>
+        <div class="a1-1">
+            <div class="text">
+                <h1 class="h1">Luxury redefined</h1>
+                <p class="p">Our rooms are designed to transport you into an environment made for <br> leisure. Take your
+                    mind off the day-to-day of home life and find a private <br> paradise for yourself.</p>
+                <button class="a2">EXPLORE</button>
+            </div>
+            <div class="img">
+                <img src="./img/steven-ungermann-aRT5UCf2MYY-unsplash.jpg" alt="" width="100%">
+            </div>
+        </div>
+        <div class="a1-1">
+            <div class="text">
+                <h1 class="h1">Leave your worries in <br> 
+                    the sand</h1>
+                <p class="p">Our rooms are designed to transport you into an environment made for <br> leisure. Take your
+                    mind off the day-to-day of home life and find a private <br> paradise for yourself.</p>
+                <button class="a2">EXPLORE</button>
+            </div>
+            <div class="img">
+                <img src="./img/andrew-ruiz-fmz-B9At9iQ-unsplash.jpg" alt="" width="100%">
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="logo2">
+            <img src="./img/Group 35.png" alt="">
+        </div>
+        <div class="mail">
+            <div class="input">
+                <input class="input-1" type="text">
+                <button class="send" onclick="send()">Send</button> <br>
+                <span id="email_error" class="error" style="color: white;"></span><br>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function send() {
+        let mail = document.querySelector(".input-1").value;
+        if(mail == "") {
+            document.querySelector("#email_error").innerText = "Phai nhap mail";
+            console.log("chua nhap mail");
+        } else {
+            document.querySelector("#email_error").innerText = "";
+            console.log("da nhap mail");
+        }
+    }
+</script>
+
+</html>

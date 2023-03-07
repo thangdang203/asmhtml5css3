@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./b2.css">
+</head>
+
+<body>
+    <header>
+        <div class="img-1">
+            <img src="./img/image 13.jpg" alt="" width="100%">
+        </div>
+        <div class="logo">
+            <img src="./img/image 14.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="b1.html">Home</a></li>
+                <li><a href="b2.html">Pages</a></li>
+                <li><a href="b3.html">Destinations</a></li>
+                <li><a href="b4.html">Blog</a></li>
+                <li><a href="b5.html">Landing</a></li>
+                <li><a href="">Shop</a></li>
+            </ul>
+        </div>
+    </header>
+    <article>
+        <div class="body-1">
+            <div class="a1">
+                <h2>EXPLORING THE SUBURB <br> SINCE 2019</h2>
+                <h3 class="h5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br>
+                    tempor incididu nt ut labore et dolore labore et dolore.</h3>
+                <button class="x1">Read more</button>
+            </div>
+            <div class="a2">
+                <img src="./img/image 18.jpg" alt="" width="100%">
+            </div>
+        </div>
+        <h1>FEATURED BLOG POSTS</h1>
+        <div class="body-2">
+            <div class="b1">
+                <img src="./img/image 15.jpg" alt="" width="100%">
+            </div>
+            <div class="b1">
+                <img src="./img/image 17.jpg" alt="" width="100%">
+            </div>
+            <div class="b1">
+                <img src="./img/image 16.jpg" alt="" width="100%">
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="text">
+            <p>© 2021 Qode Interactive, All Rights Reserved</p>
+        </div>
+        <div class="mail">
+            <div class="input">
+                <input class="input-1" type="text">
+                <button class="send" onclick="send()">Send</button> <br>
+                <span id="email_error" class="error" style="color: white;"></span><br>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function send() {
+        let mail = document.querySelector(".input-1").value;
+        if(mail == "") {
+            document.querySelector("#email_error").innerText = "Phai nhap mail";
+            console.log("chua nhap mail");
+        } else {
+            document.querySelector("#email_error").innerText = "";
+            console.log("da nhap mail");
+        }
+    }
+</script>
+
+</html>
